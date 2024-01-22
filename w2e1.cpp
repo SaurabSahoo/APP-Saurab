@@ -2,14 +2,14 @@
 #include <mpi.h>
 
 int main(int argc, char** argv) {
-    int my_rank;            /* Process rank */
-    int p;                  /* Total number of processes */
-    int source;             /* Sender's rank */
-    int dest;               /* Receiver's rank */
-    int tag = 0;            /* Tag for messages */
-    int broadcast_integer = -1; /* Integer for broadcast */
-    int spacing, stage = 0; /* Broadcast stage */
-    MPI_Status status;      /* Status for receive operation */
+    int my_rank;            
+    int p;                  
+    int source;             
+    int dest;               
+    int tag = 0;           
+    int broadcast_integer = -1; 
+    int spacing, stage = 0; 
+    MPI_Status status;      
 
     MPI_Init(&argc, &argv);
     MPI_Comm_rank(MPI_COMM_WORLD, &my_rank);
